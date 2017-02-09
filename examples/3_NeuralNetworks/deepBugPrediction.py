@@ -1,4 +1,4 @@
-Author: Justin Civi
+#Author: Justin Civi
 
 from __future__ import print_function
 
@@ -11,7 +11,7 @@ batch_size = 2
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
 batch_x, batch_y = mnist.train.next_batch(28)
-print(batch_x)
+print(batch_x[0])
 
 
 
